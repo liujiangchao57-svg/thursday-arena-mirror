@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Thursday Arena — Galaxy mirror</title>
+  <meta name="description" content="Galaxy mirror of Thursday Arena. Play on the official site. Season 1 leaderboard via public API." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <p class="banner">Galaxy mirror · not production · official play at thursdayarena.com</p>
+  <main class="page">
+    <header class="hero">
+      <p class="kicker">Build A Game Studio</p>
+      <h1>THURSDAY ARENA</h1>
+      <p class="tag">Pick a captain, take two mystery teammates, fight three rounds.</p>
+      <div class="actions">
+        <a class="btn primary" href="https://thursdayarena.com/match" rel="noopener">Play</a>
+        <a class="btn ghost" href="https://thursdayarena.com" rel="noopener">Login with X</a>
+        <a class="btn ghost" href="https://thursdayarena.com/bots" rel="noopener">Bots</a>
+      </div>
+      <p class="fine">X login / Clerk runs on the official site (clerk.thursdayarena.com). This mirror only links out.</p>
+    </header>
+
+    <section class="panel" aria-labelledby="lb-h">
+      <div class="panel-head">
+        <h2 id="lb-h">Season 1 leaderboard</h2>
+        <button type="button" id="btn-refresh" class="btn tiny">Refresh</button>
+      </div>
+      <p class="source" id="lb-source">Loading public API…</p>
+      <ol class="lb" id="lb-list"></ol>
+    </section>
+
+    <section class="panel" aria-labelledby="m-h">
+      <h2 id="m-h">Recent matches</h2>
+      <p class="source" id="m-source">Loading…</p>
+      <ul class="matches" id="m-list"></ul>
+    </section>
+
+    <footer class="foot">
+      <p>Official: <a href="https://thursdayarena.com" rel="noopener">thursdayarena.com</a></p>
+      <p>Local Cupcake throwaway stays separate — not this site.</p>
+      <p>No payments · no claim of full public repo · grokpot waitlist stays separate.</p>
+    </footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
